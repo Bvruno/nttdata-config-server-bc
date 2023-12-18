@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: config-server-bc
+  cloud:
+    config:
+      server:
+        git: 
+          uri: https://github.com/Bvruno/nttdata-config-server-bc.git
+          default-label: main
+  profiles:
+    active: git
